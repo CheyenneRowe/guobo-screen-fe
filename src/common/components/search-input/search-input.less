@@ -1,0 +1,23 @@
+@import '@src/common/styles/var.less';
+
+.search-input-container {
+    position: relative;
+    .search-input {
+        padding-right: 24px;
+        width: 100%;
+        outline: none;
+    }
+    .search-icon {
+        position: absolute;
+        top: 8px;
+        right: 6px;
+        font-size: 16px;
+        font-weight: 300;
+        &:hover {
+            color: @ai-color-primary;
+        }
+        &:active {
+            color: @ai-color-primary;
+        }
+    }
+}

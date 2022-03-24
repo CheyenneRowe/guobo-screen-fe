@@ -1,0 +1,99 @@
+@import 'var.less';
+@import 'theme.less';
+
+@breadcrumb-height: 42px;
+.sector {
+    height: calc(100% - @breadcrumb-height);
+    min-width: 1000px;
+}
+.sector-breadcrumb {
+    background: @body-background;
+    height: @breadcrumb-height;
+    line-height: @breadcrumb-height;
+    padding-left: @ai-gap-wrapper;
+    font-size: @ai-font-size-lg;
+    font-weight: @ai-font-weight;
+    color: @ai-color-text-strong;
+    min-width: 540px;
+    position: relative;
+    .current-page {
+        color: @ai-color-primary;
+    }
+    span {
+        font-weight: inherit;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.sector-content {
+    height: 100%;
+    overflow-y: auto;
+    .sector-main-content {
+        background: @component-background;
+        border-radius: @card-radius;
+        box-shadow: @shadow-1-down;
+        padding: @ai-gap;
+        margin: @ai-gap-wrapper;
+    }
+}
+
+.operate-wrapper {
+    height: @input-height-base;
+    line-height: @input-height-base;
+    margin-bottom: @ai-gap;
+    .operate-title {
+        float: left;
+        font-size: @ai-font-size-lg;
+        font-weight: @ai-font-weight;
+        color: @ai-color-text-strong;
+    }
+    .operate-search {
+        float: right;
+        margin-left: @ai-gap;
+        width: 150px;
+    }
+    .operate-btns {
+        float: right;
+        button {
+            margin-left: @ai-gap;
+        }
+    }
+    .operate-selects {
+        float: right;
+    }
+}
+
+@pager-height: 28px;
+.pager-wrapper {
+    height: @pager-height;
+    margin-top: @ai-gap;
+    .pager-total {
+        height: @pager-height;
+        line-height: @pager-height;
+        display: inline-block;
+        margin: 0 4px;
+    }
+    .pager-container {
+        float: right;
+        .ant-pagination {
+            font-size: 12px;
+            .ant-pagination-prev,
+            .ant-pagination-item,
+            .ant-pagination-next {
+                min-width: 28px;
+                height: @pager-height;
+                line-height: @pager-height - 1;
+            }
+            .anticon {
+                font-size: 14px;
+            }
+            .ant-select-selector {
+                height: @pager-height;
+            }
+            .ant-pagination-options-quick-jumper input {
+                font-size: 12px;
+            }
+        }
+    }
+}

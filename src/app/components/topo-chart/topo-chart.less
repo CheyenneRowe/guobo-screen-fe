@@ -1,0 +1,152 @@
+@import 'src/common/styles/var.less';
+
+.topo-chart-wrap {
+    font-size: 0.8rem;
+    color: rgba(49, 142, 236, 0.8);
+    text-align: center;
+    width: 100%;
+    height: calc(100% - 2.2rem);
+    overflow: auto;
+
+    .topo-chart-container {
+        svg {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .topo-tooltip-wrap {
+            background: white;
+            width: 20rem;
+            //height: 15rem;
+            padding: 0.8rem;
+            box-shadow: 0 2px 20px 10px rgba(1, 19, 64, 0.5);
+            border-radius: 4px;
+            border: 1px solid rgba(0, 118, 255, 0.44);
+            background: url('~@src/common/assets/images/background.png') no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            .top {
+                display: flex;
+                align-items: center;
+                .title {
+                    font-size: 1rem;
+                    color: #fff;
+                }
+                .status {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0.5rem;
+                    width: 30%;
+                    .normal-icon, .error-icon {
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        border-radius: 50%;
+                        margin-right: 0.5rem;
+                    }
+                    .normal-icon {
+                        background: #33C200;
+                    }
+                    .error-icon {
+                        background: #C25F00;
+                    }
+                }
+            }
+            .content {
+                margin: 0.8rem 0;
+                .text {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    line-height: 1.5rem;
+                    .arrow {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        background: url('~@src/common/assets/images/right-arrow.svg') no-repeat;
+                        background-size: cover;
+                        -webkit-background-size: cover;
+                        -o-background-size: cover;
+                        margin: 0 0.5rem;
+                    }
+                    label {
+                        width: 4rem;
+                    }
+                    .text-label {
+                        width: calc(100% - 4rem);
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        -o-text-overflow:ellipsis;
+                        text-align: left;
+                    }
+                }
+                .text-title {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    -o-text-overflow:ellipsis;
+                }
+            }
+            .footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem 0;
+                .circle {
+                    .circle-out {
+                        position: relative;
+                        width: 4rem;
+                        height: 4rem;
+                        background: transparent;
+                        border-radius: 50%;
+                        margin: 0 0.8rem;
+                        &.blue {
+                            border: 0.1rem solid rgba(41,160,240,0.4);
+                        }
+                        &.green {
+                            border: 0.1rem solid rgba(44,214,183,0.4);
+                        }
+                        &.purple {
+                            border: 0.1rem solid rgba(154,104,227,0.4);
+                        }
+                    }
+                    .circle-in {
+                        position: absolute;
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        background: transparent;
+                        border-radius: 50%;
+                        margin: auto;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        text-align: center;
+                        line-height: 3.3rem;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        &.blue {
+                            border: 0.1rem solid #29A0F0;
+                            color: #03C5FF ;
+                        }
+                        &.green {
+                            border: 0.1rem solid #2CD6B7 ;
+                            color: #2CD6B7 ;
+                        }
+                        &.purple {
+                            border: 0.1rem solid #9A68E3;
+                            color: #BF72FF;
+                        }
+                    }
+                    p {
+                        margin: 0.8rem 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

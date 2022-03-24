@@ -1,0 +1,107 @@
+@import '@src/common/styles/var.less';
+
+#nav-1st {
+    &.nav-collapsed {
+        #nav-menu .menu-item {
+            .menu-title {
+                padding: 0 17px;
+            }
+            .sub-menu {
+                position: absolute;
+                left: 50px;
+                top: 0;
+                width: 180px;
+                display: none;
+                .sub-menu-header {
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: rgba(38, 56, 87, 0.9);
+                    cursor: initial;
+                    .sub-menu-header-title {
+                        height: 40px;
+                        line-height: 40px;
+                        margin: 0 18px;
+                        border-bottom: 1px solid rgba(80, 100, 136, 0.9);
+                    }
+                }
+                .sub-menu-item {
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: rgba(38, 56, 87, 0.9);
+                    .sub-menu-title {
+                        padding-left: 40px;
+                    }
+                }
+            }
+
+            &:hover {
+                .sub-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+    &.nav-expanded {
+        .sub-menu {
+            display: none;
+            &.sub-menu-show {
+                display: block;
+            }
+        }
+    }
+    #nav-menu {
+        user-select: none;
+        .menu-item {
+            cursor: pointer;
+            position: relative;
+            .menu-title {
+                padding: 0 26px;
+                height: 40px;
+                line-height: 40px;
+                position: relative;
+                display: block;
+                &:hover {
+                    color: @ai-color-white;
+                }
+                &.menu-actived {
+                    background-color: #263857;
+                    color: @ai-color-white;
+                }
+                .menu-icon {
+                    margin-right: 10px;
+                    font-size: @ai-font-size-lg;
+                }
+                .menu-text {
+                    position: relative;
+                    bottom: 1px;
+                }
+                .arrow-icon {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                }
+            }
+            .sub-menu {
+                .sub-menu-item {
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: #263857;
+                    font-size: @ai-font-size-sm;
+                    .sub-menu-title {
+                        display: block;
+                        padding-left: 55px;
+                        &.sub-menu-actived {
+                            color: @ai-color-white;
+                            background-color: @ai-color-primary;
+                        }
+                        &:hover {
+                            color: @ai-color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

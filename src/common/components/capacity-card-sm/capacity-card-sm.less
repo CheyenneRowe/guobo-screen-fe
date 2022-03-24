@@ -1,0 +1,24 @@
+@import '../../styles/var.less';
+@import '../../styles/theme.less';
+
+.capacity-content {
+    width: 100%;
+    background-color: @ai-color-bg;
+    padding: @ai-gap-16 0;
+    .content-top {
+        display: flex;
+        align-items: center;
+        div:nth-child(1) {
+            width: 30%;
+            text-align: center;
+        }
+        div:nth-child(2) {
+            width: 65%;
+        }
+    }
+    .content-bottom {
+        span {
+            margin-right: 16px;
+        }
+    }
+}

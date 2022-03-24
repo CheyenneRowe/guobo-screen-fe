@@ -1,0 +1,27 @@
+@import '@src/common/styles/var.less';
+.ability-card {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: @ai-border-radius;
+    &:nth-child(even) {
+        background-color: @ai-color-nav-hover;
+    }
+    .ability-content {
+        width: 80%;
+        .col-image {
+            text-align: center;
+        }
+        .col-text {
+            margin-left: @ai-gap-32;
+        }
+        .card-col {
+            padding: 0 10px;
+        }
+    }
+    .ability-button {
+        width: 20%;
+        margin: auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,69 @@
+export const edgesMock = [{
+    source: 'a',
+    target: 'cpe',
+    isBreak: true
+}, {
+    source: 'a',
+    target: 'switch',
+    params: {
+        label: '123456adfbsdgbsdgbsgnbsfnsfhndsfhndfhnmdhndfhnsfdndfhndhn',
+        status: false,
+        lan: 100.00,
+        data: 29.88,
+        latency: 3
+    }
+}, {
+    source: 'a',
+    target: 'lightIp',
+    params: {
+        label: '123456',
+        status: true,
+        lan: 100.00,
+        data: 29.88,
+        latency: 3
+    }
+}, {
+    source: 'cpe',
+    target: 'cpe0',
+}, {
+    source: 'cpe',
+    target: 'cpe1',
+    isBreak: true
+}, {
+    source: 'switch',
+    target: 'switch0',
+}, {
+    source: 'switch',
+    target: 'switch1',
+}, {
+    source: 'lightIp',
+    target: 'lightIp0',
+}, {
+    source: 'lightIp',
+    target: 'lightIp1',
+}, {
+    source: 'branch',
+    target: 'cpe0',
+}, {
+    source: 'cpe0',
+    target: 'switch0',
+}, {
+    source: 'switch0',
+    target: 'switch1',
+}, {
+    source: 'switch1',
+    target: 'cpe1',
+}, {
+    source: 'cpe1',
+    target: 'PC',
+}, {
+    source: 'cpe0',
+    target: 'lightIp0',
+    isBreak: true
+}, {
+    source: 'lightIp0',
+    target: 'lightIp1',
+}, {
+    source: 'lightIp1',
+    target: 'cpe1',
+}];

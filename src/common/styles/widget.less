@@ -1,0 +1,22 @@
+@import 'var.less';
+@import 'theme.less';
+
+.widget-input,
+.widget-select,
+.widget-btn {
+    border-radius: @border-radius-base;
+    height: @input-height-base;
+    line-height: @input-height-base;
+    font-size: @ai-font-size-sm;
+}
+.widget-input {
+    border: 1px solid @border-color-base;
+    padding: 0 10px;
+    &:hover {
+        border-color: @ai-color-hover;
+    }
+}
+
+.widget-btn {
+    padding: 0 10px;
+}

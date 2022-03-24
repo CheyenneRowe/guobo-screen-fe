@@ -1,0 +1,118 @@
+@import 'src/common/styles/var.less';
+
+#dv-full-screen-container {
+    width: 100%;
+    height: 100%;
+}
+.main-page-wrap {
+    //position: relative;
+    //overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    margin: 0;
+    padding: 2rem 0;
+    z-index: -10;
+    zoom: 1;
+    background: url('~@src/common/assets/images/background.png') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+
+    .main-page-header {
+        width: 100%;
+        padding-top: 4.1%;  // 图片(高度/宽度)*100%，即可实现宽度100%，高度自适应
+        background: url('~@src/common/assets/images/title.png') no-repeat; // 图片尺寸3840×160 px
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .main-page-step {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 3rem;
+
+        .step-title{
+            color: #0076FF ;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .step-background {
+            background: url('~@src/common/assets/images/step.png') no-repeat;
+        }
+        .step-background-active {
+            background: url('~@src/common/assets/images/step-active.png') no-repeat;
+        }
+        .step-background, .step-background-active {
+            width: 11.8rem;
+            padding: 0.2rem;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            margin-left: 1.8rem;
+
+            .step-content {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 1rem;
+                .step-index {
+                    color: #0C2465;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    font-family: FZLTCHJW--GB1-0, FZLTCHJW--GB1, serif;
+                }
+                .step-title {
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    margin-left: 0.8rem;
+                    font-family: FZLTCHJW--GB1-0, FZLTCHJW--GB1, serif;
+                }
+            }
+        }
+        .step-arrow {
+            width: 3rem;
+            height: 2rem;
+            background: url('~@src/common/assets/images/arrow.png') no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+        }
+    }
+
+    .main-page-content {
+        height: calc(100% - 4.1% - 2rem - 2.5rem);
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 2rem 3rem;
+
+        .border-box-content {
+            padding: 0.3rem 1rem;
+
+            .title {
+                display: flex;
+                align-items: center;
+                span {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: rgba(49, 142, 236, 0.8);
+                }
+
+                .title-icon {
+                    width: 3.3rem;
+                    height: 1rem;
+                    background: url('~@src/common/assets/images/text-line.png') no-repeat;
+                    background-size: cover;
+                    -webkit-background-size: cover;
+                    -o-background-size: cover;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}

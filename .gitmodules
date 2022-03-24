@@ -1,0 +1,4 @@
+[submodule "common"]
+	path = src/common
+	url = http://dev.cmri.cn/ai/gitlab/onap/fe/util-fe.git
+    branch = v1-fe-dev
