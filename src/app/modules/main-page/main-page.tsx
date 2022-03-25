@@ -24,7 +24,7 @@ export default class MainPage extends PureComponent<IMainPageProps, IMainPageSta
     constructor(props) {
         super(props);
         this.state = {
-
+            test:''
         };
     }
 
